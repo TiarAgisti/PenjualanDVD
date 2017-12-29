@@ -22,36 +22,36 @@ Partial Class FrmRekapPenjualan
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Label1 = New System.Windows.Forms.Label
-        Me.Panel1 = New System.Windows.Forms.Panel
-        Me.Panel2 = New System.Windows.Forms.Panel
-        Me.tglpembelian = New System.Windows.Forms.DateTimePicker
-        Me.Label7 = New System.Windows.Forms.Label
-        Me.txtkodepembelian = New System.Windows.Forms.TextBox
-        Me.Label6 = New System.Windows.Forms.Label
-        Me.Panel4 = New System.Windows.Forms.Panel
-        Me.Label3 = New System.Windows.Forms.Label
-        Me.TextBox2 = New System.Windows.Forms.TextBox
-        Me.Label2 = New System.Windows.Forms.Label
-        Me.TextBox1 = New System.Windows.Forms.TextBox
-        Me.Button3 = New System.Windows.Forms.Button
-        Me.btnTambah = New System.Windows.Forms.Button
-        Me.Button2 = New System.Windows.Forms.Button
-        Me.Label10 = New System.Windows.Forms.Label
-        Me.TextBox5 = New System.Windows.Forms.TextBox
-        Me.Label9 = New System.Windows.Forms.Label
-        Me.TextBox4 = New System.Windows.Forms.TextBox
-        Me.Label8 = New System.Windows.Forms.Label
-        Me.txtkodeitem = New System.Windows.Forms.TextBox
-        Me.dgv = New System.Windows.Forms.DataGridView
-        Me.Panel5 = New System.Windows.Forms.Panel
-        Me.btnVoid = New System.Windows.Forms.Button
-        Me.btnAprove = New System.Windows.Forms.Button
-        Me.txtGrandTotal = New System.Windows.Forms.TextBox
-        Me.Label13 = New System.Windows.Forms.Label
-        Me.btnKeluar = New System.Windows.Forms.Button
-        Me.btnBatal = New System.Windows.Forms.Button
-        Me.btnSimpan = New System.Windows.Forms.Button
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.tglpenjualan = New System.Windows.Forms.DateTimePicker()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.txtkodepenjualan = New System.Windows.Forms.TextBox()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.Panel4 = New System.Windows.Forms.Panel()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.txtqty = New System.Windows.Forms.TextBox()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.txtharga = New System.Windows.Forms.TextBox()
+        Me.btnhapus = New System.Windows.Forms.Button()
+        Me.btnTambah = New System.Windows.Forms.Button()
+        Me.btnotomatis = New System.Windows.Forms.Button()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.txtJenisItem = New System.Windows.Forms.TextBox()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.txtnamaitem = New System.Windows.Forms.TextBox()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.txtkodeitem = New System.Windows.Forms.TextBox()
+        Me.dgv = New System.Windows.Forms.DataGridView()
+        Me.Panel5 = New System.Windows.Forms.Panel()
+        Me.btnVoid = New System.Windows.Forms.Button()
+        Me.btnAprove = New System.Windows.Forms.Button()
+        Me.txtGrandTotal = New System.Windows.Forms.TextBox()
+        Me.Label13 = New System.Windows.Forms.Label()
+        Me.btnKeluar = New System.Windows.Forms.Button()
+        Me.btnBatal = New System.Windows.Forms.Button()
+        Me.btnSimpan = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.Panel4.SuspendLayout()
@@ -86,9 +86,9 @@ Partial Class FrmRekapPenjualan
         '
         Me.Panel2.BackColor = System.Drawing.Color.Cyan
         Me.Panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Panel2.Controls.Add(Me.tglpembelian)
+        Me.Panel2.Controls.Add(Me.tglpenjualan)
         Me.Panel2.Controls.Add(Me.Label7)
-        Me.Panel2.Controls.Add(Me.txtkodepembelian)
+        Me.Panel2.Controls.Add(Me.txtkodepenjualan)
         Me.Panel2.Controls.Add(Me.Label6)
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel2.Location = New System.Drawing.Point(0, 52)
@@ -96,18 +96,18 @@ Partial Class FrmRekapPenjualan
         Me.Panel2.Size = New System.Drawing.Size(780, 45)
         Me.Panel2.TabIndex = 173
         '
-        'tglpembelian
+        'tglpenjualan
         '
-        Me.tglpembelian.CalendarForeColor = System.Drawing.Color.Violet
-        Me.tglpembelian.CalendarMonthBackground = System.Drawing.Color.Cyan
-        Me.tglpembelian.CalendarTitleBackColor = System.Drawing.Color.Black
-        Me.tglpembelian.CalendarTitleForeColor = System.Drawing.Color.Red
-        Me.tglpembelian.CalendarTrailingForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.tglpembelian.Font = New System.Drawing.Font("Comic Sans MS", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tglpembelian.Location = New System.Drawing.Point(556, 8)
-        Me.tglpembelian.Name = "tglpembelian"
-        Me.tglpembelian.Size = New System.Drawing.Size(215, 26)
-        Me.tglpembelian.TabIndex = 177
+        Me.tglpenjualan.CalendarForeColor = System.Drawing.Color.Violet
+        Me.tglpenjualan.CalendarMonthBackground = System.Drawing.Color.Cyan
+        Me.tglpenjualan.CalendarTitleBackColor = System.Drawing.Color.Black
+        Me.tglpenjualan.CalendarTitleForeColor = System.Drawing.Color.Red
+        Me.tglpenjualan.CalendarTrailingForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.tglpenjualan.Font = New System.Drawing.Font("Comic Sans MS", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tglpenjualan.Location = New System.Drawing.Point(556, 8)
+        Me.tglpenjualan.Name = "tglpenjualan"
+        Me.tglpenjualan.Size = New System.Drawing.Size(215, 26)
+        Me.tglpenjualan.TabIndex = 177
         '
         'Label7
         '
@@ -120,13 +120,13 @@ Partial Class FrmRekapPenjualan
         Me.Label7.TabIndex = 176
         Me.Label7.Text = "TANGGAL PENJUALAN"
         '
-        'txtkodepembelian
+        'txtkodepenjualan
         '
-        Me.txtkodepembelian.BackColor = System.Drawing.Color.White
-        Me.txtkodepembelian.Location = New System.Drawing.Point(137, 11)
-        Me.txtkodepembelian.Name = "txtkodepembelian"
-        Me.txtkodepembelian.Size = New System.Drawing.Size(203, 20)
-        Me.txtkodepembelian.TabIndex = 175
+        Me.txtkodepenjualan.BackColor = System.Drawing.Color.White
+        Me.txtkodepenjualan.Location = New System.Drawing.Point(137, 11)
+        Me.txtkodepenjualan.Name = "txtkodepenjualan"
+        Me.txtkodepenjualan.Size = New System.Drawing.Size(203, 20)
+        Me.txtkodepenjualan.TabIndex = 175
         '
         'Label6
         '
@@ -144,16 +144,16 @@ Partial Class FrmRekapPenjualan
         Me.Panel4.BackColor = System.Drawing.Color.Cyan
         Me.Panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Panel4.Controls.Add(Me.Label3)
-        Me.Panel4.Controls.Add(Me.TextBox2)
+        Me.Panel4.Controls.Add(Me.txtqty)
         Me.Panel4.Controls.Add(Me.Label2)
-        Me.Panel4.Controls.Add(Me.TextBox1)
-        Me.Panel4.Controls.Add(Me.Button3)
+        Me.Panel4.Controls.Add(Me.txtharga)
+        Me.Panel4.Controls.Add(Me.btnhapus)
         Me.Panel4.Controls.Add(Me.btnTambah)
-        Me.Panel4.Controls.Add(Me.Button2)
+        Me.Panel4.Controls.Add(Me.btnotomatis)
         Me.Panel4.Controls.Add(Me.Label10)
-        Me.Panel4.Controls.Add(Me.TextBox5)
+        Me.Panel4.Controls.Add(Me.txtJenisItem)
         Me.Panel4.Controls.Add(Me.Label9)
-        Me.Panel4.Controls.Add(Me.TextBox4)
+        Me.Panel4.Controls.Add(Me.txtnamaitem)
         Me.Panel4.Controls.Add(Me.Label8)
         Me.Panel4.Controls.Add(Me.txtkodeitem)
         Me.Panel4.Dock = System.Windows.Forms.DockStyle.Top
@@ -173,13 +173,13 @@ Partial Class FrmRekapPenjualan
         Me.Label3.TabIndex = 177
         Me.Label3.Text = "QTY"
         '
-        'TextBox2
+        'txtqty
         '
-        Me.TextBox2.Enabled = False
-        Me.TextBox2.Location = New System.Drawing.Point(556, 57)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(215, 20)
-        Me.TextBox2.TabIndex = 178
+        Me.txtqty.Enabled = False
+        Me.txtqty.Location = New System.Drawing.Point(556, 57)
+        Me.txtqty.Name = "txtqty"
+        Me.txtqty.Size = New System.Drawing.Size(215, 20)
+        Me.txtqty.TabIndex = 178
         '
         'Label2
         '
@@ -192,25 +192,25 @@ Partial Class FrmRekapPenjualan
         Me.Label2.TabIndex = 175
         Me.Label2.Text = "HARGA"
         '
-        'TextBox1
+        'txtharga
         '
-        Me.TextBox1.Enabled = False
-        Me.TextBox1.Location = New System.Drawing.Point(556, 31)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(215, 20)
-        Me.TextBox1.TabIndex = 176
+        Me.txtharga.Enabled = False
+        Me.txtharga.Location = New System.Drawing.Point(556, 31)
+        Me.txtharga.Name = "txtharga"
+        Me.txtharga.Size = New System.Drawing.Size(215, 20)
+        Me.txtharga.TabIndex = 176
         '
-        'Button3
+        'btnhapus
         '
-        Me.Button3.BackColor = System.Drawing.Color.Cyan
-        Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button3.ForeColor = System.Drawing.Color.Black
-        Me.Button3.Location = New System.Drawing.Point(214, 59)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(75, 23)
-        Me.Button3.TabIndex = 174
-        Me.Button3.Text = "HAPUS"
-        Me.Button3.UseVisualStyleBackColor = False
+        Me.btnhapus.BackColor = System.Drawing.Color.Cyan
+        Me.btnhapus.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnhapus.ForeColor = System.Drawing.Color.Black
+        Me.btnhapus.Location = New System.Drawing.Point(214, 59)
+        Me.btnhapus.Name = "btnhapus"
+        Me.btnhapus.Size = New System.Drawing.Size(75, 23)
+        Me.btnhapus.TabIndex = 174
+        Me.btnhapus.Text = "HAPUS"
+        Me.btnhapus.UseVisualStyleBackColor = False
         '
         'btnTambah
         '
@@ -224,18 +224,18 @@ Partial Class FrmRekapPenjualan
         Me.btnTambah.Text = "TAMBAH"
         Me.btnTambah.UseVisualStyleBackColor = False
         '
-        'Button2
+        'btnotomatis
         '
-        Me.Button2.BackColor = System.Drawing.Color.Cyan
-        Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.ForeColor = System.Drawing.Color.Black
-        Me.Button2.Location = New System.Drawing.Point(361, 3)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(46, 29)
-        Me.Button2.TabIndex = 171
-        Me.Button2.Text = "..."
-        Me.Button2.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.Button2.UseVisualStyleBackColor = False
+        Me.btnotomatis.BackColor = System.Drawing.Color.Cyan
+        Me.btnotomatis.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnotomatis.ForeColor = System.Drawing.Color.Black
+        Me.btnotomatis.Location = New System.Drawing.Point(361, 3)
+        Me.btnotomatis.Name = "btnotomatis"
+        Me.btnotomatis.Size = New System.Drawing.Size(46, 29)
+        Me.btnotomatis.TabIndex = 171
+        Me.btnotomatis.Text = "..."
+        Me.btnotomatis.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.btnotomatis.UseVisualStyleBackColor = False
         '
         'Label10
         '
@@ -248,13 +248,13 @@ Partial Class FrmRekapPenjualan
         Me.Label10.TabIndex = 171
         Me.Label10.Text = "JENIS"
         '
-        'TextBox5
+        'txtJenisItem
         '
-        Me.TextBox5.Enabled = False
-        Me.TextBox5.Location = New System.Drawing.Point(556, 5)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(215, 20)
-        Me.TextBox5.TabIndex = 172
+        Me.txtJenisItem.Enabled = False
+        Me.txtJenisItem.Location = New System.Drawing.Point(556, 5)
+        Me.txtJenisItem.Name = "txtJenisItem"
+        Me.txtJenisItem.Size = New System.Drawing.Size(215, 20)
+        Me.txtJenisItem.TabIndex = 172
         '
         'Label9
         '
@@ -267,12 +267,12 @@ Partial Class FrmRekapPenjualan
         Me.Label9.TabIndex = 169
         Me.Label9.Text = "NAMA"
         '
-        'TextBox4
+        'txtnamaitem
         '
-        Me.TextBox4.Location = New System.Drawing.Point(135, 33)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(203, 20)
-        Me.TextBox4.TabIndex = 170
+        Me.txtnamaitem.Location = New System.Drawing.Point(135, 33)
+        Me.txtnamaitem.Name = "txtnamaitem"
+        Me.txtnamaitem.Size = New System.Drawing.Size(203, 20)
+        Me.txtnamaitem.TabIndex = 170
         '
         'Label8
         '
@@ -431,19 +431,19 @@ Partial Class FrmRekapPenjualan
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Panel1 As System.Windows.Forms.Panel
     Friend WithEvents Panel2 As System.Windows.Forms.Panel
-    Friend WithEvents tglpembelian As System.Windows.Forms.DateTimePicker
+    Friend WithEvents tglpenjualan As System.Windows.Forms.DateTimePicker
     Friend WithEvents Label7 As System.Windows.Forms.Label
-    Friend WithEvents txtkodepembelian As System.Windows.Forms.TextBox
+    Friend WithEvents txtkodepenjualan As System.Windows.Forms.TextBox
     Friend WithEvents Label6 As System.Windows.Forms.Label
     Friend WithEvents Panel4 As System.Windows.Forms.Panel
     Friend WithEvents Label10 As System.Windows.Forms.Label
-    Friend WithEvents TextBox5 As System.Windows.Forms.TextBox
+    Friend WithEvents txtJenisItem As System.Windows.Forms.TextBox
     Friend WithEvents Label9 As System.Windows.Forms.Label
-    Friend WithEvents TextBox4 As System.Windows.Forms.TextBox
+    Friend WithEvents txtnamaitem As System.Windows.Forms.TextBox
     Friend WithEvents Label8 As System.Windows.Forms.Label
     Friend WithEvents txtkodeitem As System.Windows.Forms.TextBox
-    Friend WithEvents Button2 As System.Windows.Forms.Button
-    Friend WithEvents Button3 As System.Windows.Forms.Button
+    Friend WithEvents btnotomatis As System.Windows.Forms.Button
+    Friend WithEvents btnhapus As System.Windows.Forms.Button
     Friend WithEvents btnTambah As System.Windows.Forms.Button
     Friend WithEvents dgv As System.Windows.Forms.DataGridView
     Friend WithEvents Panel5 As System.Windows.Forms.Panel
@@ -455,7 +455,7 @@ Partial Class FrmRekapPenjualan
     Friend WithEvents btnBatal As System.Windows.Forms.Button
     Friend WithEvents btnSimpan As System.Windows.Forms.Button
     Friend WithEvents Label2 As System.Windows.Forms.Label
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
+    Friend WithEvents txtharga As System.Windows.Forms.TextBox
     Friend WithEvents Label3 As System.Windows.Forms.Label
-    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
+    Friend WithEvents txtqty As System.Windows.Forms.TextBox
 End Class

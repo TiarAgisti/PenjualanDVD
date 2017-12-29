@@ -18,14 +18,14 @@ Public Class FrmBarangMasuk
         dr.Read()
 
         If Not dr.HasRows Then
-            urutan = "NO/" & DateTime.Now.Year & "/" & "000001"
+            urutan = "BM/" & DateTime.Now.Year & "/" & "000001"
         Else
             cari = Microsoft.VisualBasic.Right(dr.GetString(0), 6)
             If Microsoft.VisualBasic.Left(dr.GetString(0), 8) <> "NO/" & DateTime.Now.Year & "/" Then
-                urutan = "NO/" & DateTime.Now.Year & "/" & 1
+                urutan = "BM/" & DateTime.Now.Year & "/" & 1
             Else
                 hitung = Microsoft.VisualBasic.Right(dr.GetString(0), 6) + 1
-                urutan = "NO/" & DateTime.Now.Year & "/" & Microsoft.VisualBasic.Right("000000" & hitung, 6)
+                urutan = "BM/" & DateTime.Now.Year & "/" & Microsoft.VisualBasic.Right("000000" & hitung, 6)
             End If
         End If
         dr.Close()
@@ -371,12 +371,6 @@ Public Class FrmBarangMasuk
             Else
                 txtqty.Focus()
             End If
-        End If
-    End Sub
-
-    Private Sub txtNota_KeyPress(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyPressEventArgs)
-        If e.KeyChar = Chr(13) Then
-            txtkodeitem.Focus()
         End If
     End Sub
 End Class

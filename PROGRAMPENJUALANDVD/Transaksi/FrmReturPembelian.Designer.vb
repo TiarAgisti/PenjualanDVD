@@ -22,33 +22,33 @@ Partial Class FrmReturPembelian
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Label1 = New System.Windows.Forms.Label
-        Me.Panel2 = New System.Windows.Forms.Panel
-        Me.tglpembelian = New System.Windows.Forms.DateTimePicker
-        Me.Label7 = New System.Windows.Forms.Label
-        Me.txtkodepembelian = New System.Windows.Forms.TextBox
-        Me.Label6 = New System.Windows.Forms.Label
-        Me.Panel4 = New System.Windows.Forms.Panel
-        Me.Label2 = New System.Windows.Forms.Label
-        Me.TextBox1 = New System.Windows.Forms.TextBox
-        Me.Button3 = New System.Windows.Forms.Button
-        Me.btnTambah = New System.Windows.Forms.Button
-        Me.Button2 = New System.Windows.Forms.Button
-        Me.Label10 = New System.Windows.Forms.Label
-        Me.TextBox5 = New System.Windows.Forms.TextBox
-        Me.Label9 = New System.Windows.Forms.Label
-        Me.TextBox4 = New System.Windows.Forms.TextBox
-        Me.Label8 = New System.Windows.Forms.Label
-        Me.txtkodeitem = New System.Windows.Forms.TextBox
-        Me.dgv = New System.Windows.Forms.DataGridView
-        Me.Panel5 = New System.Windows.Forms.Panel
-        Me.btnVoid = New System.Windows.Forms.Button
-        Me.btnAprove = New System.Windows.Forms.Button
-        Me.txtGrandTotal = New System.Windows.Forms.TextBox
-        Me.Label13 = New System.Windows.Forms.Label
-        Me.btnKeluar = New System.Windows.Forms.Button
-        Me.btnBatal = New System.Windows.Forms.Button
-        Me.btnSimpan = New System.Windows.Forms.Button
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.tglpembelian = New System.Windows.Forms.DateTimePicker()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.txtkodepembelian = New System.Windows.Forms.TextBox()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.Panel4 = New System.Windows.Forms.Panel()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.txtqty = New System.Windows.Forms.TextBox()
+        Me.btnhapus = New System.Windows.Forms.Button()
+        Me.btnTambah = New System.Windows.Forms.Button()
+        Me.btnotomatis = New System.Windows.Forms.Button()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.txtjenisitem = New System.Windows.Forms.TextBox()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.txtnamaitem = New System.Windows.Forms.TextBox()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.txtkodeitem = New System.Windows.Forms.TextBox()
+        Me.dgv = New System.Windows.Forms.DataGridView()
+        Me.Panel5 = New System.Windows.Forms.Panel()
+        Me.btntolak = New System.Windows.Forms.Button()
+        Me.btnsetujui = New System.Windows.Forms.Button()
+        Me.txtGrandTotal = New System.Windows.Forms.TextBox()
+        Me.Label13 = New System.Windows.Forms.Label()
+        Me.btnKeluar = New System.Windows.Forms.Button()
+        Me.btnBatal = New System.Windows.Forms.Button()
+        Me.btnSimpan = New System.Windows.Forms.Button()
         Me.Panel2.SuspendLayout()
         Me.Panel4.SuspendLayout()
         CType(Me.dgv, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -130,14 +130,14 @@ Partial Class FrmReturPembelian
         Me.Panel4.BackColor = System.Drawing.Color.Cyan
         Me.Panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Panel4.Controls.Add(Me.Label2)
-        Me.Panel4.Controls.Add(Me.TextBox1)
-        Me.Panel4.Controls.Add(Me.Button3)
+        Me.Panel4.Controls.Add(Me.txtqty)
+        Me.Panel4.Controls.Add(Me.btnhapus)
         Me.Panel4.Controls.Add(Me.btnTambah)
-        Me.Panel4.Controls.Add(Me.Button2)
+        Me.Panel4.Controls.Add(Me.btnotomatis)
         Me.Panel4.Controls.Add(Me.Label10)
-        Me.Panel4.Controls.Add(Me.TextBox5)
+        Me.Panel4.Controls.Add(Me.txtjenisitem)
         Me.Panel4.Controls.Add(Me.Label9)
-        Me.Panel4.Controls.Add(Me.TextBox4)
+        Me.Panel4.Controls.Add(Me.txtnamaitem)
         Me.Panel4.Controls.Add(Me.Label8)
         Me.Panel4.Controls.Add(Me.txtkodeitem)
         Me.Panel4.Dock = System.Windows.Forms.DockStyle.Top
@@ -157,25 +157,25 @@ Partial Class FrmReturPembelian
         Me.Label2.TabIndex = 175
         Me.Label2.Text = "QTY"
         '
-        'TextBox1
+        'txtqty
         '
-        Me.TextBox1.Enabled = False
-        Me.TextBox1.Location = New System.Drawing.Point(556, 31)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(215, 20)
-        Me.TextBox1.TabIndex = 176
+        Me.txtqty.Enabled = False
+        Me.txtqty.Location = New System.Drawing.Point(556, 31)
+        Me.txtqty.Name = "txtqty"
+        Me.txtqty.Size = New System.Drawing.Size(215, 20)
+        Me.txtqty.TabIndex = 176
         '
-        'Button3
+        'btnhapus
         '
-        Me.Button3.BackColor = System.Drawing.Color.Cyan
-        Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button3.ForeColor = System.Drawing.Color.Black
-        Me.Button3.Location = New System.Drawing.Point(209, 59)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(75, 23)
-        Me.Button3.TabIndex = 174
-        Me.Button3.Text = "HAPUS"
-        Me.Button3.UseVisualStyleBackColor = False
+        Me.btnhapus.BackColor = System.Drawing.Color.Cyan
+        Me.btnhapus.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnhapus.ForeColor = System.Drawing.Color.Black
+        Me.btnhapus.Location = New System.Drawing.Point(209, 59)
+        Me.btnhapus.Name = "btnhapus"
+        Me.btnhapus.Size = New System.Drawing.Size(75, 23)
+        Me.btnhapus.TabIndex = 174
+        Me.btnhapus.Text = "HAPUS"
+        Me.btnhapus.UseVisualStyleBackColor = False
         '
         'btnTambah
         '
@@ -189,18 +189,18 @@ Partial Class FrmReturPembelian
         Me.btnTambah.Text = "TAMBAH"
         Me.btnTambah.UseVisualStyleBackColor = False
         '
-        'Button2
+        'btnotomatis
         '
-        Me.Button2.BackColor = System.Drawing.Color.Cyan
-        Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.ForeColor = System.Drawing.Color.Black
-        Me.Button2.Location = New System.Drawing.Point(323, 5)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(46, 29)
-        Me.Button2.TabIndex = 171
-        Me.Button2.Text = "..."
-        Me.Button2.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        Me.Button2.UseVisualStyleBackColor = False
+        Me.btnotomatis.BackColor = System.Drawing.Color.Cyan
+        Me.btnotomatis.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnotomatis.ForeColor = System.Drawing.Color.Black
+        Me.btnotomatis.Location = New System.Drawing.Point(323, 5)
+        Me.btnotomatis.Name = "btnotomatis"
+        Me.btnotomatis.Size = New System.Drawing.Size(46, 29)
+        Me.btnotomatis.TabIndex = 171
+        Me.btnotomatis.Text = "..."
+        Me.btnotomatis.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.btnotomatis.UseVisualStyleBackColor = False
         '
         'Label10
         '
@@ -213,13 +213,13 @@ Partial Class FrmReturPembelian
         Me.Label10.TabIndex = 171
         Me.Label10.Text = "JENIS"
         '
-        'TextBox5
+        'txtjenisitem
         '
-        Me.TextBox5.Enabled = False
-        Me.TextBox5.Location = New System.Drawing.Point(556, 5)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(215, 20)
-        Me.TextBox5.TabIndex = 172
+        Me.txtjenisitem.Enabled = False
+        Me.txtjenisitem.Location = New System.Drawing.Point(556, 5)
+        Me.txtjenisitem.Name = "txtjenisitem"
+        Me.txtjenisitem.Size = New System.Drawing.Size(215, 20)
+        Me.txtjenisitem.TabIndex = 172
         '
         'Label9
         '
@@ -232,12 +232,12 @@ Partial Class FrmReturPembelian
         Me.Label9.TabIndex = 169
         Me.Label9.Text = "NAMA"
         '
-        'TextBox4
+        'txtnamaitem
         '
-        Me.TextBox4.Location = New System.Drawing.Point(128, 33)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(189, 20)
-        Me.TextBox4.TabIndex = 170
+        Me.txtnamaitem.Location = New System.Drawing.Point(128, 33)
+        Me.txtnamaitem.Name = "txtnamaitem"
+        Me.txtnamaitem.Size = New System.Drawing.Size(189, 20)
+        Me.txtnamaitem.TabIndex = 170
         '
         'Label8
         '
@@ -272,8 +272,8 @@ Partial Class FrmReturPembelian
         '
         Me.Panel5.BackColor = System.Drawing.Color.Cyan
         Me.Panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Panel5.Controls.Add(Me.btnVoid)
-        Me.Panel5.Controls.Add(Me.btnAprove)
+        Me.Panel5.Controls.Add(Me.btntolak)
+        Me.Panel5.Controls.Add(Me.btnsetujui)
         Me.Panel5.Controls.Add(Me.txtGrandTotal)
         Me.Panel5.Controls.Add(Me.Label13)
         Me.Panel5.Controls.Add(Me.btnKeluar)
@@ -285,29 +285,29 @@ Partial Class FrmReturPembelian
         Me.Panel5.Size = New System.Drawing.Size(779, 40)
         Me.Panel5.TabIndex = 179
         '
-        'btnVoid
+        'btntolak
         '
-        Me.btnVoid.BackColor = System.Drawing.Color.Cyan
-        Me.btnVoid.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnVoid.ForeColor = System.Drawing.Color.Black
-        Me.btnVoid.Location = New System.Drawing.Point(324, 6)
-        Me.btnVoid.Name = "btnVoid"
-        Me.btnVoid.Size = New System.Drawing.Size(75, 23)
-        Me.btnVoid.TabIndex = 31
-        Me.btnVoid.Text = "TOLAK"
-        Me.btnVoid.UseVisualStyleBackColor = False
+        Me.btntolak.BackColor = System.Drawing.Color.Cyan
+        Me.btntolak.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btntolak.ForeColor = System.Drawing.Color.Black
+        Me.btntolak.Location = New System.Drawing.Point(324, 6)
+        Me.btntolak.Name = "btntolak"
+        Me.btntolak.Size = New System.Drawing.Size(75, 23)
+        Me.btntolak.TabIndex = 31
+        Me.btntolak.Text = "TOLAK"
+        Me.btntolak.UseVisualStyleBackColor = False
         '
-        'btnAprove
+        'btnsetujui
         '
-        Me.btnAprove.BackColor = System.Drawing.Color.Cyan
-        Me.btnAprove.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnAprove.ForeColor = System.Drawing.Color.Black
-        Me.btnAprove.Location = New System.Drawing.Point(243, 6)
-        Me.btnAprove.Name = "btnAprove"
-        Me.btnAprove.Size = New System.Drawing.Size(75, 23)
-        Me.btnAprove.TabIndex = 30
-        Me.btnAprove.Text = "SETUJUI" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
-        Me.btnAprove.UseVisualStyleBackColor = False
+        Me.btnsetujui.BackColor = System.Drawing.Color.Cyan
+        Me.btnsetujui.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnsetujui.ForeColor = System.Drawing.Color.Black
+        Me.btnsetujui.Location = New System.Drawing.Point(243, 6)
+        Me.btnsetujui.Name = "btnsetujui"
+        Me.btnsetujui.Size = New System.Drawing.Size(75, 23)
+        Me.btnsetujui.TabIndex = 30
+        Me.btnsetujui.Text = "SETUJUI" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        Me.btnsetujui.UseVisualStyleBackColor = False
         '
         'txtGrandTotal
         '
@@ -396,20 +396,20 @@ Partial Class FrmReturPembelian
     Friend WithEvents Label6 As System.Windows.Forms.Label
     Friend WithEvents Panel4 As System.Windows.Forms.Panel
     Friend WithEvents Label2 As System.Windows.Forms.Label
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
-    Friend WithEvents Button3 As System.Windows.Forms.Button
+    Friend WithEvents txtqty As System.Windows.Forms.TextBox
+    Friend WithEvents btnhapus As System.Windows.Forms.Button
     Friend WithEvents btnTambah As System.Windows.Forms.Button
-    Friend WithEvents Button2 As System.Windows.Forms.Button
+    Friend WithEvents btnotomatis As System.Windows.Forms.Button
     Friend WithEvents Label10 As System.Windows.Forms.Label
-    Friend WithEvents TextBox5 As System.Windows.Forms.TextBox
+    Friend WithEvents txtjenisitem As System.Windows.Forms.TextBox
     Friend WithEvents Label9 As System.Windows.Forms.Label
-    Friend WithEvents TextBox4 As System.Windows.Forms.TextBox
+    Friend WithEvents txtnamaitem As System.Windows.Forms.TextBox
     Friend WithEvents Label8 As System.Windows.Forms.Label
     Friend WithEvents txtkodeitem As System.Windows.Forms.TextBox
     Friend WithEvents dgv As System.Windows.Forms.DataGridView
     Friend WithEvents Panel5 As System.Windows.Forms.Panel
-    Friend WithEvents btnVoid As System.Windows.Forms.Button
-    Friend WithEvents btnAprove As System.Windows.Forms.Button
+    Friend WithEvents btntolak As System.Windows.Forms.Button
+    Friend WithEvents btnsetujui As System.Windows.Forms.Button
     Friend WithEvents txtGrandTotal As System.Windows.Forms.TextBox
     Friend WithEvents Label13 As System.Windows.Forms.Label
     Friend WithEvents btnKeluar As System.Windows.Forms.Button

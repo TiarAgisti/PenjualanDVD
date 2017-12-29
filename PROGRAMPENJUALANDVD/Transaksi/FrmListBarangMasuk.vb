@@ -6,9 +6,9 @@ Public Class FrmListBarangMasuk
     End Function
     Sub TampilData()
         Dim query As String
-        query = "Select BM.nobarangmasuk,BM.tanggalbarangmasuk,BM.nonotapembelian,pgw.namapegawai" & _
-        " , CASE WHEN bm.status = 1 THEN 'Baru' WHEN bm.status = 3 Then 'Disetujui' ELSE 'Ditolak' End StatusDesc " & _
-        " From tbbarangmasukheader as BM INNER JOIN tbpegawai as pgw" & _
+        query = "Select BM.nobarangmasuk,BM.tanggalbarangmasuk,pgw.namapegawai" &
+        " , CASE WHEN bm.status = 1 THEN 'Baru' WHEN bm.status = 3 Then 'Disetujui' ELSE 'Ditolak' End StatusDesc " &
+        " From tbbarangmasukheader as BM INNER JOIN tbpegawai as pgw" &
         " ON pgw.kodepegawai = BM.kodepegawai Where BM.status <> 0"
         Try
             OpenConnection()
@@ -34,12 +34,10 @@ Public Class FrmListBarangMasuk
         dgv.Columns(0).HeaderText = "No Barang Masuk"
         dgv.Columns(0).Width = 120
         dgv.Columns(1).HeaderText = "Tanggal"
-        dgv.Columns(2).HeaderText = "No Nota Pembelian"
-        dgv.Columns(2).Width = 150
-        dgv.Columns(3).HeaderText = "Nama Pegawai"
-        dgv.Columns(3).Width = 120
-        dgv.Columns(4).HeaderText = "Status"
-        dgv.Columns(4).Width = 100
+        dgv.Columns(2).HeaderText = "Nama Pegawai"
+        dgv.Columns(2).Width = 120
+        dgv.Columns(3).HeaderText = "Status"
+        dgv.Columns(3).Width = 100
     End Sub
     Private Sub btnSimpan_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btntambah.Click
         Dim frm As FrmBarangMasuk = New FrmBarangMasuk

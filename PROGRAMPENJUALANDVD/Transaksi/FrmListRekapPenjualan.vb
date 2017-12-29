@@ -4,7 +4,10 @@ Imports System.Data.SqlClient
 Public Class FrmListRekapPenjualan
     Sub TampilData()
         Dim query As String
-        query = "SELECT * FROM tbpenjualanheader"
+        query = "Select PJ.nopenjualan,PJ.tanggalpenjualan,pgw.namapegawai" &
+        " , CASE WHEN PJ.status = 1 THEN 'Baru' WHEN PJ.status = 3 Then 'Disetujui' ELSE 'Ditolak' End StatusDesc " &
+        " From tbpenjualanheader as PJ INNER JOIN tbpegawai as pgw" &
+        " ON pgw.kodepegawai = PJ.kodepegawai Where PJ.status <> 0"
         Try
             OpenConnection()
             cmd = New SqlCommand(query, conn)
@@ -35,15 +38,37 @@ Public Class FrmListRekapPenjualan
         dgv.Columns(3).Width = 120
     End Sub
 
-    Private Sub Label1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label1.Click
-
-    End Sub
-
-    Private Sub GroupBox1_Enter(sender As Object, e As EventArgs) Handles GroupBox1.Enter
-
-    End Sub
-
     Private Sub FrmListRekapPenjualan_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Call TampilData()
+        Try
+            TampilData()
+        Catch ex As Exception
+            msgError(ex.Message)
+        End Try
+    End Sub
+
+    Private Sub btnSimpan_Click(sender As Object, e As EventArgs) Handles btnSimpan.Click
+        Dim frm As FrmRekapPenjualan = New FrmRekapPenjualan
+        FrmRekapPenjualan.kondisi = "Create"
+        frm.ShowDialog()
+    End Sub
+
+    Private Sub btnsegarkan_Click(sender As Object, e As EventArgs) Handles btnsegarkan.Click
+        Try
+            TampilData()
+        Catch ex As Exception
+            msgError(ex.Message)
+        End Try
+    End Sub
+
+    Private Sub btnKeluar_Click(sender As Object, e As EventArgs) Handles btnKeluar.Click
+        Close()
+    End Sub
+
+    Private Sub btnubah_Click(sender As Object, e As EventArgs) Handles btnubah.Click
+        Dim row As Integer = dgv.CurrentRow.Index
+        Dim frm As FrmRekapPenjualan = New FrmRekapPenjualan
+        FrmRekapPenjualan.noPJ = dgv.Item(0, row).Value
+        FrmRekapPenjualan.kondisi = "Update"
+        frm.ShowDialog()
     End Sub
 End Class

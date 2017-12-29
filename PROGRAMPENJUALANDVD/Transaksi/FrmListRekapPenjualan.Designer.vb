@@ -27,9 +27,9 @@ Partial Class FrmListRekapPenjualan
         Me.txtCari = New System.Windows.Forms.TextBox()
         Me.cmbCari = New System.Windows.Forms.ComboBox()
         Me.Panel5 = New System.Windows.Forms.Panel()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.btnsegarkan = New System.Windows.Forms.Button()
         Me.btnKeluar = New System.Windows.Forms.Button()
-        Me.btnBatal = New System.Windows.Forms.Button()
+        Me.btnubah = New System.Windows.Forms.Button()
         Me.btnSimpan = New System.Windows.Forms.Button()
         Me.dgv = New System.Windows.Forms.DataGridView()
         Me.GroupBox1.SuspendLayout()
@@ -84,9 +84,9 @@ Partial Class FrmListRekapPenjualan
         '
         Me.Panel5.BackColor = System.Drawing.Color.Cyan
         Me.Panel5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.Panel5.Controls.Add(Me.Button1)
+        Me.Panel5.Controls.Add(Me.btnsegarkan)
         Me.Panel5.Controls.Add(Me.btnKeluar)
-        Me.Panel5.Controls.Add(Me.btnBatal)
+        Me.Panel5.Controls.Add(Me.btnubah)
         Me.Panel5.Controls.Add(Me.btnSimpan)
         Me.Panel5.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel5.Location = New System.Drawing.Point(0, 109)
@@ -94,17 +94,17 @@ Partial Class FrmListRekapPenjualan
         Me.Panel5.Size = New System.Drawing.Size(791, 40)
         Me.Panel5.TabIndex = 181
         '
-        'Button1
+        'btnsegarkan
         '
-        Me.Button1.BackColor = System.Drawing.Color.Cyan
-        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.ForeColor = System.Drawing.Color.Black
-        Me.Button1.Location = New System.Drawing.Point(165, 6)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(100, 23)
-        Me.Button1.TabIndex = 32
-        Me.Button1.Text = "SEGARKAN"
-        Me.Button1.UseVisualStyleBackColor = False
+        Me.btnsegarkan.BackColor = System.Drawing.Color.Cyan
+        Me.btnsegarkan.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnsegarkan.ForeColor = System.Drawing.Color.Black
+        Me.btnsegarkan.Location = New System.Drawing.Point(165, 6)
+        Me.btnsegarkan.Name = "btnsegarkan"
+        Me.btnsegarkan.Size = New System.Drawing.Size(100, 23)
+        Me.btnsegarkan.TabIndex = 32
+        Me.btnsegarkan.Text = "SEGARKAN"
+        Me.btnsegarkan.UseVisualStyleBackColor = False
         '
         'btnKeluar
         '
@@ -118,17 +118,17 @@ Partial Class FrmListRekapPenjualan
         Me.btnKeluar.Text = "KELUAR"
         Me.btnKeluar.UseVisualStyleBackColor = False
         '
-        'btnBatal
+        'btnubah
         '
-        Me.btnBatal.BackColor = System.Drawing.Color.Cyan
-        Me.btnBatal.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnBatal.ForeColor = System.Drawing.Color.Black
-        Me.btnBatal.Location = New System.Drawing.Point(84, 6)
-        Me.btnBatal.Name = "btnBatal"
-        Me.btnBatal.Size = New System.Drawing.Size(75, 23)
-        Me.btnBatal.TabIndex = 25
-        Me.btnBatal.Text = "UBAH"
-        Me.btnBatal.UseVisualStyleBackColor = False
+        Me.btnubah.BackColor = System.Drawing.Color.Cyan
+        Me.btnubah.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnubah.ForeColor = System.Drawing.Color.Black
+        Me.btnubah.Location = New System.Drawing.Point(84, 6)
+        Me.btnubah.Name = "btnubah"
+        Me.btnubah.Size = New System.Drawing.Size(75, 23)
+        Me.btnubah.TabIndex = 25
+        Me.btnubah.Text = "UBAH"
+        Me.btnubah.UseVisualStyleBackColor = False
         '
         'btnSimpan
         '
@@ -177,9 +177,9 @@ Partial Class FrmListRekapPenjualan
     Friend WithEvents txtCari As System.Windows.Forms.TextBox
     Friend WithEvents cmbCari As System.Windows.Forms.ComboBox
     Friend WithEvents Panel5 As System.Windows.Forms.Panel
-    Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents btnsegarkan As System.Windows.Forms.Button
     Friend WithEvents btnKeluar As System.Windows.Forms.Button
-    Friend WithEvents btnBatal As System.Windows.Forms.Button
+    Friend WithEvents btnubah As System.Windows.Forms.Button
     Friend WithEvents btnSimpan As System.Windows.Forms.Button
     Friend WithEvents dgv As System.Windows.Forms.DataGridView
 End Class
