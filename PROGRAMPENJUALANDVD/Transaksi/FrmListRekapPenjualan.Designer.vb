@@ -22,16 +22,16 @@ Partial Class FrmListRekapPenjualan
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Label1 = New System.Windows.Forms.Label
-        Me.GroupBox1 = New System.Windows.Forms.GroupBox
-        Me.txtCari = New System.Windows.Forms.TextBox
-        Me.cmbCari = New System.Windows.Forms.ComboBox
-        Me.Panel5 = New System.Windows.Forms.Panel
-        Me.Button1 = New System.Windows.Forms.Button
-        Me.btnKeluar = New System.Windows.Forms.Button
-        Me.btnBatal = New System.Windows.Forms.Button
-        Me.btnSimpan = New System.Windows.Forms.Button
-        Me.dgv = New System.Windows.Forms.DataGridView
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.txtCari = New System.Windows.Forms.TextBox()
+        Me.cmbCari = New System.Windows.Forms.ComboBox()
+        Me.Panel5 = New System.Windows.Forms.Panel()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.btnKeluar = New System.Windows.Forms.Button()
+        Me.btnBatal = New System.Windows.Forms.Button()
+        Me.btnSimpan = New System.Windows.Forms.Button()
+        Me.dgv = New System.Windows.Forms.DataGridView()
         Me.GroupBox1.SuspendLayout()
         Me.Panel5.SuspendLayout()
         CType(Me.dgv, System.ComponentModel.ISupportInitialize).BeginInit()
