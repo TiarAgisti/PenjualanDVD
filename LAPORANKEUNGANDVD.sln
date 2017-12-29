@@ -1,6 +1,8 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 10.00
-# Visual Studio 2008
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "LAPORANKEUANGANDVD", "PROGRAMPENJUALANDVD\LAPORANKEUANGANDVD.vbproj", "{2E2A8765-27C8-4AB7-B57C-54B511112340}"
 EndProject
 Global
